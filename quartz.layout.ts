@@ -8,15 +8,19 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/lpsm-dev",
-      Linkedin: "https://www.linkedin.com/in/lpsm-dev",
+      GitHub: "https://github.com/lpsm-dev/tech-blog",
     },
   }),
 }
 
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
-  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
+  beforeBody: [
+    Component.Breadcrumbs(),
+    Component.ArticleTitle(),
+    Component.ContentMeta({ showReadingTime: true }),
+    Component.TagList(),
+  ],
   left: [
     Component.PageTitle(),
     Component.Search(),

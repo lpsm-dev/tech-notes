@@ -10,14 +10,19 @@ const config: QuartzConfig = {
   configuration: {
     pageTitle: "</ Tech Blog>",
     pageTitleSuffix: "",
-    enableSPA: true,
+    enableSPA: false,
     enablePopovers: true,
     analytics: null,
     locale: "pt-BR",
     baseUrl: "tech.lpsm.cloud",
     ignorePatterns: ["private", "templates", ".obsidian"],
-    defaultDateType: "created",
-    generateSocialImages: false,
+    defaultDateType: "modified",
+    generateSocialImages: {
+      colorScheme: "lightMode",
+      width: 1200,
+      height: 630,
+      excludeRoot: false,
+    },
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
@@ -55,11 +60,18 @@ const config: QuartzConfig = {
   plugins: {
     transformers: [
       Plugin.FrontMatter(),
+      Plugin.TableOfContents({ maxDepth: 4 }),
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "filesystem"],
       }),
-      Plugin.SyntaxHighlighting(),
-      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+      Plugin.SyntaxHighlighting({
+        theme: {
+          light: "github-light",
+          dark: "poimandres",
+        },
+        keepBackground: true,
+      }),
+      Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false, enableCheckbox: true }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
@@ -76,6 +88,8 @@ const config: QuartzConfig = {
       Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,
+        rssLimit: 10,
+        rssFullHtml: true,
       }),
       Plugin.Assets(),
       Plugin.Static(),
