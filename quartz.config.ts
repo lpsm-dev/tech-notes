@@ -9,9 +9,11 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "</ Tech Blog>",
-    enableSPA: false,
-    enablePopovers: false,
+    pageTitleSuffix: "",
+    enableSPA: true,
+    enablePopovers: true,
     analytics: null,
+    locale: "pt-BR",
     baseUrl: "tech.lpsm.cloud",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",
@@ -56,13 +58,7 @@ const config: QuartzConfig = {
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "filesystem"],
       }),
-      Plugin.SyntaxHighlighting({
-        theme: {
-          light: "github-light",
-          dark: "github-dark",
-        },
-        keepBackground: false,
-      }),
+      Plugin.SyntaxHighlighting(),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),

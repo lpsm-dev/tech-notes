@@ -2,7 +2,7 @@
 title: Tech Blog
 ---
 
-Bem vindo ao meu blog sobre tecnologia! :wave:
+Bem vindo ao meu blog sobre tecnologia!
 
 <a href="#you-open-the-gate" class="gate">
 
@@ -217,3 +217,5 @@ Bem vindo ao meu blog sobre tecnologia! :wave:
 </svg>
 
 </a>
+
+## Visão Geral
