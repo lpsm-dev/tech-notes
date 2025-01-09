@@ -221,5 +221,14 @@ Bem vindo ao meu blog sobre tecnologia!
 > [!quote]
 >
 > Passo a passo, abrace grandes desafios. Avance com determinação, pois a diligência traz recompensas.
+> 
 
-## Visão Geral
+Fique à vontade para fazer comentários sobre as anotações, etc.
+
+# Projects
+
+# Areas
+
+# Resources
+
+# Archives
