@@ -29,7 +29,7 @@ Nesse projeto, organizo meu blog sobre tecnologia. Aqui você encontrará artigo
 
 # Visão Geral
 
-Olá, meu nome é Lucca!
+Olá, queridos tech lovers! :wave:
 
 Meu objetivo com esse projeto é compartilhar conhecimento sobre tecnologia. Sempre tive o desejo de escrever sobre os assuntos que estudo e, com o tempo, percebi que o blog seria uma ótima forma de compartilhar esse conhecimento.
 
