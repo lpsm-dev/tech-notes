@@ -9,4 +9,5 @@ longform:
   sceneTemplate: content/3 - Resources/Obsidian/templates/tech-note.md
   ignoredFiles:
     - Untitled
+    - Untitled
 ---
