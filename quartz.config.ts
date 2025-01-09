@@ -15,7 +15,7 @@ const config: QuartzConfig = {
     analytics: null,
     locale: "pt-BR",
     baseUrl: "tech.lpsm.cloud",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    ignorePatterns: ["private", "templates", ".obsidian", "content/3 - Resources/Obsidian"],
     defaultDateType: "modified",
     generateSocialImages: {
       colorScheme: "lightMode",
