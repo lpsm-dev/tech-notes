@@ -4,7 +4,9 @@ longform:
   title: 0 - Inbox
   workflow: Default Workflow
   sceneFolder: /
-  scenes: []
-  sceneTemplate: templates/tech-note.md
-  ignoredFiles: []
+  scenes:
+    - About Me
+  sceneTemplate: content/3 - Resources/Obsidian/templates/tech-note.md
+  ignoredFiles:
+    - Untitled
 ---
