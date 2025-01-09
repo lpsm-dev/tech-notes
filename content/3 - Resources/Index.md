@@ -1,7 +1,7 @@
 ---
 longform:
   format: scenes
-  title: KCNA
+  title: 3 - Resources
   workflow: Default Workflow
   sceneFolder: /
   scenes: []

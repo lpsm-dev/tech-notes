@@ -1,7 +1,7 @@
 ---
 longform:
   format: scenes
-  title: About Me
+  title: 2 - Areas
   workflow: Default Workflow
   sceneFolder: /
   scenes: []
