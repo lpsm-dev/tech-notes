@@ -1,9 +1,10 @@
+---
 name: Deploy Quartz site to GitHub Pages
 
 on:
   push:
     branches:
-      - v4
+      - main
 
 permissions:
   contents: read
@@ -20,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch all history for git info
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -32,7 +33,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: public
-
   deploy:
     needs: build
     environment:
