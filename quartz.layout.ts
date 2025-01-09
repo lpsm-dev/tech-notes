@@ -9,7 +9,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/lpsm-dev/tech-blog",
-      RSS: "https://be-far.com/index.xml",
+      RSS: "https://tech.lpsm.cloud/index.xml",
     },
   }),
 }
