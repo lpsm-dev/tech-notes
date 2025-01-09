@@ -14,11 +14,3 @@ Bem vindo ao meu blog sobre tecnologia!
 > 
 
 Fique à vontade para fazer comentários sobre as anotações, etc.
-
-# Projects
-
-# Areas
-
-# Resources
-
-# Archives
