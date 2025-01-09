@@ -42,6 +42,7 @@ Espero que goste do conteúdo e que ele te ajude de alguma forma. Se tiver algum
 Links relevantes para essa documentação:
 
 - [Quartz](https://quartz.jzhao.xyz)
+- [Obsidian](https://obsidian.md/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
