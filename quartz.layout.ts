@@ -16,16 +16,10 @@ export const sharedPageComponents: SharedLayout = {
 
 // components for pages that display a single page (e.g. a single note)
 export const defaultContentPageLayout: PageLayout = {
-  beforeBody: [
-    Component.Breadcrumbs(),
-    Component.ArticleTitle(),
-    Component.ContentMeta(),
-    Component.TagList(),
-  ],
+  beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
     Component.PageTitle(),
     Component.Search(),
-    Component.MobileOnly(Component.Spacer()),
     Component.Darkmode(),
     Component.Divider(),
     Component.DesktopOnly(
@@ -34,11 +28,63 @@ export const defaultContentPageLayout: PageLayout = {
         limit: 5,
       }),
     ),
+    Component.DesktopOnly(
+      Component.Explorer({
+        title: "Explore",
+        useSavedState: true,
+        sortFn: (a, b) => {
+          if ((!a.file && !b.file) || (a.file && b.file)) {
+            return a.displayName.localeCompare(b.displayName, undefined, {
+              numeric: true,
+              sensitivity: "base",
+            })
+          }
+          if (a.file && !b.file) {
+            return 1
+          } else {
+            return -1
+          }
+        },
+      }),
+    ),
   ],
   right: [
-    Component.Graph(),
+    Component.TagList(),
+    Component.Graph({
+      localGraph: {
+        linkDistance: 50,
+      },
+      globalGraph: {
+        linkDistance: 50,
+      },
+    }),
     Component.DesktopOnly(Component.TableOfContents()),
     Component.Backlinks(),
+    Component.MobileOnly(
+      Component.RecentNotes({
+        title: "Mais Recente",
+        limit: 5,
+      }),
+    ),
+    Component.MobileOnly(
+      Component.Explorer({
+        title: "Explore",
+        useSavedState: true,
+        sortFn: (a, b) => {
+          if ((!a.file && !b.file) || (a.file && b.file)) {
+            return a.displayName.localeCompare(b.displayName, undefined, {
+              numeric: true,
+              sensitivity: "base",
+            })
+          }
+          if (a.file && !b.file) {
+            return 1
+          } else {
+            return -1
+          }
+        },
+      }),
+    ),
   ],
 }
 
@@ -47,10 +93,34 @@ export const defaultListPageLayout: PageLayout = {
   beforeBody: [Component.Breadcrumbs(), Component.ArticleTitle(), Component.ContentMeta()],
   left: [
     Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.Divider(),
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "Mais Recente",
+        limit: 5,
+      }),
+    ),
+    Component.DesktopOnly(
+      Component.Explorer({
+        title: "Explore",
+        useSavedState: true,
+        sortFn: (a, b) => {
+          if ((!a.file && !b.file) || (a.file && b.file)) {
+            return a.displayName.localeCompare(b.displayName, undefined, {
+              numeric: true,
+              sensitivity: "base",
+            })
+          }
+          if (a.file && !b.file) {
+            return 1
+          } else {
+            return -1
+          }
+        },
+      }),
+    ),
   ],
   right: [],
 }
