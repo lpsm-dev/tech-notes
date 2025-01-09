@@ -31,6 +31,14 @@ Nesse projeto, organizo meu blog sobre tecnologia. Aqui você encontrará artigo
 
 Olá, meu nome é Lucca!
 
+Meu objetivo com esse projeto é compartilhar conhecimento sobre tecnologia. Sempre tive o desejo de escrever sobre os assuntos que estudo e, com o tempo, percebi que o blog seria uma ótima forma de compartilhar esse conhecimento.
+
+Não irei me prender a um único tema, pois acredito que a tecnologia é um universo vasto e que devemos explorar o máximo possível. Dessa forma, você encontrará artigos sobre DevOps, Cloud, Infraestrutura, Desenvolvimento de Software, entre outros.
+
+A questão sobre produtividade e organização também é algo que me interessa bastante, então corre o risco de encontrar alguns artigos sobre esses temas por aqui, rsrs.
+
+Espero que você goste do conteúdo e que ele te ajude de alguma forma. Se tiver alguma sugestão de tema, crítica ou elogio, fique à vontade para entrar em contato comigo.
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 # Referências
