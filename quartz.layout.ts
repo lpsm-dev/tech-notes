@@ -9,6 +9,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/lpsm-dev",
+      Linkedin: "https://www.linkedin.com/in/lpsm-dev",
     },
   }),
 }
@@ -23,10 +24,16 @@ export const defaultContentPageLayout: PageLayout = {
   ],
   left: [
     Component.PageTitle(),
-    Component.MobileOnly(Component.Spacer()),
     Component.Search(),
+    Component.MobileOnly(Component.Spacer()),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
+    Component.Divider(),
+    Component.DesktopOnly(
+      Component.RecentNotes({
+        title: "Mais Recente",
+        limit: 5,
+      }),
+    ),
   ],
   right: [
     Component.Graph(),
