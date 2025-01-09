@@ -1,5 +1,9 @@
 ---
 title: Tech Blog
+created: 2025-01-09
+modified: 2025-01-09
+tags:
+  - index
 ---
 
 Bem vindo ao meu blog sobre tecnologia!
