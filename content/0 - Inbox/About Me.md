@@ -4,6 +4,7 @@ created: 2025-01-09
 modified: 2025-01-09
 draft: true
 tags:
+  - about-me
   - tech
 ---
 
