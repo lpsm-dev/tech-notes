@@ -14,7 +14,7 @@ export default ((opts?: Options) => {
       <footer class={`${displayClass ?? ""}`}>
         <p>
           <small>
-            Made with ❤️ By <a href="https://github.com/lpsm-dev">Lucca</a> 🧘
+            Made with ❤️ By <a href="https://github.com/lpsm-dev">Me</a> 🧘
           </small>
         </p>
         <ul>
