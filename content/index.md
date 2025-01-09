@@ -1,6 +1,8 @@
 ---
-title: Bem-vindo ao meu blog
+title: Tech Blog
 ---
+
+Bem vindo ao meu blog sobre tecnologia! :wave:
 
 <a href="#you-open-the-gate" class="gate">
 
