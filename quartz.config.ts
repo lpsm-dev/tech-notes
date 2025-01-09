@@ -27,9 +27,9 @@ const config: QuartzConfig = {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
-        header: "Monaspace Neon",
-        body: "Monaspace Neon",
-        code: "Monaspace Neon",
+        header: "Schibsted Grotesk",
+        body: "Source Sans Pro",
+        code: "IBM Plex Mono",
       },
       colors: {
         lightMode: {
