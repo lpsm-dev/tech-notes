@@ -6,6 +6,14 @@ tags:
   - index
 ---
 
+<div class="head-card">
+<img src="/moon-light.png">
+
+> [!tip] 
+> You will own **nothing**, and you will be **happy**.
+
+</div>
+
 Bem vindo ao meu blog sobre tecnologia!
 
 > [!quote]
