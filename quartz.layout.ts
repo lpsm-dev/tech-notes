@@ -25,7 +25,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.DesktopOnly(
       Component.RecentNotes({
         title: "Mais Recente",
-        limit: 5,
+        limit: 3,
       }),
     ),
     Component.DesktopOnly(
@@ -63,7 +63,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(
       Component.RecentNotes({
         title: "Mais Recente",
-        limit: 5,
+        limit: 3,
       }),
     ),
     Component.MobileOnly(
@@ -99,7 +99,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.DesktopOnly(
       Component.RecentNotes({
         title: "Mais Recente",
-        limit: 5,
+        limit: 3,
       }),
     ),
     Component.DesktopOnly(
