@@ -8,13 +8,13 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "</ Tech Blog>",
+    pageTitle: "</ Tech Notes>",
     pageTitleSuffix: "",
     enableSPA: false,
     enablePopovers: true,
     analytics: null,
     locale: "pt-BR",
-    baseUrl: "tech.lpsm.cloud",
+    baseUrl: "notes.lpsm.cloud",
     ignorePatterns: ["private", "templates", ".obsidian", "content/3 - Resources/Obsidian"],
     defaultDateType: "modified",
     generateSocialImages: {

@@ -1,5 +1,5 @@
 ---
-title: Tech Blog
+title: Tech Notes
 created: 2025-01-09
 modified: 2025-01-09
 tags:
