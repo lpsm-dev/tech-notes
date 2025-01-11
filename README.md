@@ -21,21 +21,10 @@ Nesse projeto, organizo meu blog sobre tecnologia.
 # Sumário
 
 - [Sumário](#sumário)
-- [Visão Geral](#visão-geral)
 - [Referências](#referências)
 - [Versionamento](#versionamento)
 - [Troubleshooting](#troubleshooting)
 - [Show your support](#show-your-support)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-# Visão Geral
-
-Olá, queridos tech lovers! :wave:
-
-Meu objetivo com esse projeto é compartilhar conhecimento sobre tecnologia. Sempre tive o desejo de escrever sobre os assuntos que estudo e, com o tempo, percebi que o blog seria uma ótima forma de compartilhar esse conhecimento. Não irei me prender a um único tema, pois acredito que a tecnologia é um universo vasto e que devemos explorar o máximo possível. Dessa forma, você encontrará artigos sobre DevOps, Cloud, Infraestrutura, Desenvolvimento de Software, entre outros. A questão sobre produtividade e organização também é algo que me interessa bastante, então corre o risco de encontrar alguns artigos sobre esses temas por aqui, rsrs.
-
-Espero que goste do conteúdo e que ele te ajude de alguma forma. Se tiver alguma sugestão de tema, crítica ou elogio, fique à vontade para abrir uma issue nesse projeto. Sua opinião é muito importante!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
