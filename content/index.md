@@ -1,5 +1,5 @@
 ---
-title: Tech Notes
+title: Home
 created: 2025-01-09
 modified: 2025-01-09
 tags:
