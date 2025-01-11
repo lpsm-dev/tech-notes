@@ -15,6 +15,4 @@ tags:
 
 </div>
 
-Bem-vindo ao meu Segundo Cérebro público, um cofre de conhecimento elaborado onde minhas anotações, ideias e percepções são cuidadosamente selecionadas, conectadas e combinadas ao longo do tempo.
-
-Fique à vontade para fazer comentários sobre as anotações, etc.
+Bem-vindo ao meu Segundo Cérebro, um cofre de conhecimento elaborado onde minhas anotações, ideias e percepções são cuidadosamente selecionadas, conectadas e combinadas ao longo do tempo.
