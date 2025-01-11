@@ -7,7 +7,7 @@ tags:
 ---
 
 <div class="head-card">
-<img src="./3 - Resource/Images/moon-light.png" width="225">
+<img src="moon-light.png" width="225">
 
 > [!quote]
 >

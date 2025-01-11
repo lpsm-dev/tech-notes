@@ -76,12 +76,6 @@ const config: QuartzConfig = {
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest" }),
       Plugin.Description(),
-      Plugin.Remark42({
-        host: "https://be-far.com/comments",
-        site_id: "remark",
-        theme: "dark",
-        no_footer: true,
-      }),
       Plugin.Latex({ renderEngine: "katex" }),
     ],
     filters: [Plugin.RemoveDrafts()],
