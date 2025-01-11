@@ -1,3 +1,207 @@
 @use "./base.scss";
+@use "./variables.scss" as *;
 
-// put your custom CSS here!
+@font-face {
+  font-family: "Monaspace Neon";
+  src: url("/static/fonts/heading-font.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Monaspace Argon";
+  src: url("/static/fonts/main-font.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+//
+// Background/visual elements
+//
+
+// Pseudo-element for the transparent background cover moon
+[saved-theme="dark"] body::before {
+  filter: invert(100%);
+  opacity: 0.03;
+}
+body::before {
+  pointer-events: none;
+  filter: invert(0%);
+  content: url("/moon-light.png");
+  position: fixed;
+  top: -400px;
+  left: -300px;
+  transform: scale(0.67);
+  // content: "";
+  // background-image: url("/static/moon-light.png");
+  opacity: 0.04;
+}
+
+.head-card {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 3em 0em;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+// Specifically the first part of the index page with the moon
+[saved-theme="dark"] body[data-slug="index"] img[src="./moon-light.png"] {
+  filter: invert(100%);
+}
+body[data-slug="index"] img {
+  height: 15em;
+  filter: invert(0%);
+}
+
+body[data-slug="index"] blockquote[class="callout"][data-callout="tip"] {
+  width: 50%;
+}
+
+//
+// Content spacing
+//
+
+h1 {
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+h2 {
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+h3 {
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+h4 {
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+h5 {
+  padding-bottom: 2px;
+  margin-bottom: 2px;
+}
+
+p {
+  text-indent: 8px;
+  margin-top: 2px;
+  margin-bottom: 16px;
+  padding-top: 2px;
+}
+
+// :is(h1, h2, h3, h4, .tags *) + p {
+//   text-indent: 16px;
+// }
+
+p:has(+ ul) {
+  margin-bottom: 2px;
+}
+
+blockquote > p {
+  text-indent: 0px;
+}
+
+#search-button > p {
+  text-indent: 0px;
+  margin-bottom: 2px;
+}
+
+footer > p {
+  margin-top: 2px;
+  margin-bottom: 16px;
+  padding-top: 2px;
+  text-indent: 8px;
+}
+
+.callout-title {
+  padding-top: 12px;
+  padding-bottom: 4px;
+}
+.content-meta > span {
+  // margin-left: 8px;
+  // margin-right: 8px;
+}
+
+ul {
+  margin-top: 2px;
+  padding-top: 0px;
+}
+
+//
+// Component aesthetics
+//
+
+.page-footer {
+  display: grid;
+  grid-auto-columns: 1fr;
+  width: 100%;
+}
+
+.page-footer > * {
+  grid-row: 1;
+  padding: 0px 16px;
+}
+
+#quartz-body {
+  margin: 1rem 0rem;
+}
+
+.page > #quartz-body .sidebar {
+  margin: 0px 32px 0px 1rem;
+  padding: 16px 16px 2px 16px;
+}
+
+.page > #quartz-body .sidebar.left {
+  @media all and not ($mobile) {
+    border-radius: 1rem;
+    border: 2px solid var(--gray);
+    top: 1rem;
+    height: calc(100vh - 2rem);
+    margin-bottom: 1rem;
+    align-content: flex-start;
+    box-shadow: 8px 6px 0 0 var(--gray);
+    transition-property: border, box-shadow;
+    transition-duration: .3s;
+    transition-timing-function: ease-in;
+  }
+}
+[saved-theme="dark"] .page > #quartz-body .sidebar.left:hover {
+  @media all and not ($mobile) {
+    border: 2px solid #e9edfa;
+    box-shadow: 8px 6px 0 0 #e9edfa;
+  }
+}
+.page > #quartz-body .sidebar.left:hover {
+  @media all and not ($mobile) {
+    border: 2px solid #262835;
+    box-shadow: 8px 6px 0 0 #262835;
+    // top: calc(1rem - 4px);
+    // margin-left: calc(1rem - 2px);
+    // margin-right: 34px;
+    // height: calc(100vh - (2rem + 2px))
+  }
+}
+
+
+.page > #quartz-body .page-header {
+  margin-top: 1px;
+  padding: 0px;
+}
+
+#toc-content .depth-1 {
+  margin-bottom: 0px;
+}
+
+#toc-content ul {
+  margin: 0px 0px;
+}
+
+// Custom for my site
+.bf-icon {
+  max-width:0.8em;
+  max-height:0.8em;
+  margin: 0px;
+}
