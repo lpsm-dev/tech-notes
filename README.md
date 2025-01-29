@@ -28,6 +28,10 @@ Nesse projeto, organizo meu blog sobre tecnologia.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+# Estrutura de Pastas
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 # Referências
 
 Links relevantes para essa documentação:
