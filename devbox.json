@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.13.7/.schema/devbox.schema.json",
-  "packages": ["direnv@2.35.0", "gitleaks@latest", "pre-commit@latest", "yamllint@1.35.1"],
+  "packages": ["direnv@2.35.0", "gitleaks@7.6.1", "pre-commit@latest", "yamllint@1.35.1"],
   "shell": {
     "init_hook": ["echo 'Welcome to devbox!' > /dev/null"],
     "scripts": {
